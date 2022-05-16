@@ -1,0 +1,13 @@
+# Consume
+curl -i http://localhost:8080/v1/reactivechat/messages
+
+# Send
+curl -i \
+-d '{"username": "axelrodvl", "message": "Hello, Everyone!"}' \
+-H "Content-Type: application/json" \
+-X POST http://localhost:8080/v1/reactivechat/send
+
+curl -i \
+-d '{"username": "axelrodvl", "message": "How are you!"}' \
+-H "Content-Type: application/json" \
+-X POST http://localhost:8080/v1/reactivechat/send
